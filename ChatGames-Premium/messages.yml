@@ -19,6 +19,7 @@ toggleAllGames: '&8[%prefix%&8] &fYou have toggled &a%state% &cALL &fchatgames!'
 state-ON: 'ON'
 state-OFF: 'OFF'
 game_started: '&8[%prefix%&8] &aYou have started a %game% chat event in your chat!'
+invalid_arguments: '&8[%prefix%&8] &fThere was a problem while trying to validate the arguments for the command!'
 
 #You can use <center> if you wish to do so in the top messages.
 top:
@@ -148,6 +149,28 @@ reaction:
     - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
     - ''
     - '<center>&f%timeToGuess%s &chave passed! &fThe reaction game is now over!'
+    - '<center>The correct answer was &e%correct_answer%&f!'
+    - ''
+
+guess_the_number:
+  gameStartAnnouncement:
+    - ''
+    - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+    - ''
+    - '<center>&fYou have &e%timeToGuess% seconds &fto &dguess the number &fin the range of:'
+    - '<center>&f`&b%selection%&f`'
+    - ''
+  correct_message:
+    - ''
+    - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+    - ''
+    - '<center>&a%winner_1% &7was the first to answer `&e%correct_answer%&7` (&c%time_1%s&7) and got a prize!'
+    - ''
+  time_expired_message:
+    - ''
+    - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+    - ''
+    - '<center>&f%timeToGuess%s &chave passed! &fThe guessing game is now over!'
     - '<center>The correct answer was &e%correct_answer%&f!'
     - ''
 
