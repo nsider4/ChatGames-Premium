@@ -20,6 +20,7 @@ discord:
   title: 'Chat Games Result'
   description: 'The winner is:'
   winner-field: '%winner% (%time%)'
+  game-field: 'Game: %game%'
 
 #Storage type, available: SQLite or MySQL
 Storage: 'SQLite'
@@ -27,13 +28,19 @@ Storage: 'SQLite'
 SQLite:
   Filename: 'chatgames-data'
 
-mysql:
+MySQL:
   host: 'localhost'
+  port: '3306'
+  user: 'root'
+  password: 'password'
   database: 'chatgame'
-  username: 'root'
-  password: ''
-  port: 3306
-  ssl: false
+  connection-parameters: '?autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8'
+  Pool-Settings:
+    max-pool-size: 10
+    min-idle: 10
+    max-lifetime: 180000
+    keep-alive-time: 60000
+    time-out: 20000
 
 disabled-worlds:
   - 'example_world'
@@ -77,10 +84,10 @@ fastest-typers-top: true
 GameSounds:
   volume: 0.5
   #LEAVE ANY OF THESE EMPTY TO DISABLE THEM
-  win: 'ENTITY_EXPERIENCE_ORB_PICKUP'
-  game-start: 'ENTITY_PLAYER_LEVELUP'
-  time-expired: 'ENTITY_VILLAGER_NO'
-  wrong-case: 'BLOCK_NOTE_BLOCK_BASS'
+  win: 'minecraft:entity.experience_orb.pickup'
+  game-start: 'minecraft:entity.player.levelup'
+  time-expired: 'minecraft:entity.villager.no'
+  wrong-case: 'minecraft:block.note_block.bass'
 
 
 #############################
@@ -113,6 +120,21 @@ reaction:
   winners: 1
 
   case-sensitive: true
+  #The time users will have to guess, solve, write, etc in seconds.
+  timeToGuess_seconds: 20
+  #__Leave the following 2 empty to disable them__
+  titleMessage: '&b%selection%'
+  subtitleMessage: '&aWrite'
+
+guess_the_number:
+  enable: true
+  winners: 1
+  #Don't change this
+  case-sensitive: false
+
+  lower-limit: 1
+  upper-limit: 20
+
   #The time users will have to guess, solve, write, etc in seconds.
   timeToGuess_seconds: 20
   #__Leave the following 2 empty to disable them__
