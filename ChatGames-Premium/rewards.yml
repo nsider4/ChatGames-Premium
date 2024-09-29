@@ -47,6 +47,13 @@ reaction:
         data:
           - '[consolecmd] give %player% iron_block 5'
 
+guess_the_number:
+  rewards:
+    1:
+      reward_1:
+        data:
+          - '[consolecmd] give %player% iron_block 5'
+
 clickable:
   rewards:
     1:
