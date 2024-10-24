@@ -31,6 +31,16 @@ hunt:
       5:
         rewards:
           - reward_1
+
+    #Example for MythicMobs:
+    #SkeletalKnight:                 <----------- This is the internal name for the mob, the name that it has in the MythicMobs files.
+    #  2:
+    #    rewards:
+    #      - reward_2
+    #  4:
+    #    rewards:
+    #      - reward_1
+
     CREEPER:
       3:
         rewards:
