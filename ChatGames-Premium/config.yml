@@ -25,6 +25,9 @@ discord:
 #Storage type, available: SQLite or MySQL
 Storage: 'SQLite'
 
+#The name of the table that will contain all ChatGames data
+table_name: 'chatgames'
+
 SQLite:
   Filename: 'chatgames-data'
 
