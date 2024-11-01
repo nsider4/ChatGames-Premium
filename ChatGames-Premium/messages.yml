@@ -55,6 +55,7 @@ help_command:
   - '&a/chatgames top &f- &3Shows the top 10 players with most points.'
   - '&a/chatgames fastest &f- &3Shows the top 10 players with fastest times.'
   - '&a/chatgames toggle &f- &3Toggle chat games on or off for yourself'
+  - '&a/chatgames toggleAll &f- &3Toggle chat games on or off for all players'
   - '&a/chatgames togglesound &f- &3Toggle chat games SOUNDS on or off.'
   - '&a/chatgames reload &f- &3Reloads the configuration files.'
   - '&a/chatgames +points <player> <amount> &f- &3Adds points to a player.'
