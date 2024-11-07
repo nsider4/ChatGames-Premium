@@ -12,6 +12,7 @@ player_points: '&8[%prefix%&8] &fYou have &a%amount% &fpoints!'
 in_cooldown: '&8[%prefix%&8] &cYou can`t use this yet, wait &e%time_left%s &cbefore using the command again'
 type_not_found: '&8[%prefix%&8] &fUnable to find the type of material/entity for &c%type%'
 
+no_winner_placeholder: '---'
 cannot_start_from_disabled: '&8[%prefix%&8] &cYou can`t start a chat game from a disabled world!'
 toggle_game: '&8[%prefix%&8] &fYou have toggled &a%state% &fchat events!'
 toggle_sound: '&8[%prefix%&8] &fYou have toggled &a%state% &fchat game sounds!'
