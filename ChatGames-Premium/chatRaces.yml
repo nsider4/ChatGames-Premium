@@ -126,7 +126,7 @@ mine:
         rewards:
           - reward_2
           - reward_3
-    GRASS:
+    GRASS_BLOCK:
       16:
         rewards:
           - reward_1
