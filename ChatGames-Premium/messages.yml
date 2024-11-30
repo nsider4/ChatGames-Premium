@@ -22,6 +22,26 @@ state-ON: 'ON'
 state-OFF: 'OFF'
 game_started: '&8[%prefix%&8] &aYou have started a %game% chat event in your chat!'
 invalid_arguments: '&8[%prefix%&8] &fThere was a problem while trying to validate the arguments for the command!'
+cant_log_local: '&8[%prefix%&8] &cYou can`t see log messages because this option is disabled in the config!'
+
+logs:
+  no_logs: "&cNo logs available or an error occurred."
+  header: "&8[%prefix%&8] &eLast &6%amount% &elogs:"
+  entries:
+    # Game-related log entries
+    game:
+      start: "&aGame Starting: &f%game% | &aHas Answer: &f%hasAnswer% | &aAnswer: &f%answer%"
+      end: "&aGame Ending: &f%game% | &aHas Winner: &f%hasWinner% | &aWinners: &f%winners% | &aAnswer: &f%answer%"
+
+    # Race-related log entries for Material-type races
+    race:
+      start: "&aRace Starting: &f%race% | &aMaterial: &f%material% | &aAmount: &f%amount%"
+      end: "&aRace Ending: &f%race% | &aHas Winner: &f%hasWinner% | &aWinner: &f%winner% | &aMaterial: &f%material% | &aAmount: &f%amount%"
+
+    # Special entry for HUNT race (Entity-type race)
+    hunt:
+      start: "&aRace Starting: &f%race% | &aEntity: &f%entity% | &aAmount: &f%amount%"
+      end: "&aRace Ending: &f%race% | &aHas Winner: &f%hasWinner% | &aWinner: &f%winner% | &aEntity: &f%entity% | &aAmount: &f%amount%"
 
 #You can use <center> if you wish to do so in the top messages.
 top:
@@ -64,6 +84,7 @@ help_command:
   - '&a/chatgames -points <player> <amount> &f- &3Removes points from a player.'
   - '&a/chatgames setpoints <player> <amount> &f- &3Sets the points for a player'
   - '&a/chatgames points &f- &3Returns your points'
+  - '&a/chatgames logs <amount> &f- &3Returns the last X amount of game logs.'
   - '&6'
   - '&2&lGAME TYPES:'
   - '&5unscramble, unreverse, reaction, random, fillout, variable, clickable, math, trivia, hoverable, hunt, mine, place, fish, craft, eat, furnace'
@@ -232,7 +253,7 @@ hoverable:
     - ''
     - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
     - ''
-    - '<center>&fYou have &e%timeToGuess% seconds &fto &dwrite&f the word on the hover:'
+    - '<center>&fYou have &e%timeToGuess% seconds &fto &dwrite&f the word on the hover text:'
     - ''
     - '<center>&b%hoverableText%'
     - ''
