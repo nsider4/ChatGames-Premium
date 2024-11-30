@@ -50,6 +50,15 @@ disabled-worlds:
 
 prefix: '&c&lC&d&lH&b&lA&a&lT &6&lG&e&lA&a&lM&c&lE&b&lS'
 
+#The file where the logs will be saved
+log-file: 'game_log.txt'
+
+#If true, it will log all chat events in the console, both can happen at the same time
+log-console: true
+
+#If true, it will log all chat events in a file, both can happen at the same time
+log-local: true
+
 #Only players with 'chatgames.start.*' will be able to start even when this is false
 allow_starting_from_disabled: true
 
