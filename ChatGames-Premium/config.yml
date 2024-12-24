@@ -153,6 +153,23 @@ guess_the_number:
   titleMessage: '&b%selection%'
   subtitleMessage: '&aWrite'
 
+shoppinglist:
+  enable: true
+  winners: 1
+
+  case-sensitive: false
+
+  listLength: 3
+
+  #The time users will have to memorize, solve, write, etc in seconds.
+  timeToMemorize: 7
+
+  #The time users will have to guess, solve, write, etc in seconds.
+  timeToGuess_seconds: 20
+  #Leave the following 2 empty to disable them
+  titleMessage: '&bMemorize'
+  subtitleMessage: '&aShopping List'
+
 clickable:
   enable: true
   winners: 1
@@ -227,7 +244,7 @@ math:
   operators:
     - '+'
     - '-'
-    - '*'
+    - 'x'
     - '/'
 
   #__Leave the following 2 empty to disable them__
