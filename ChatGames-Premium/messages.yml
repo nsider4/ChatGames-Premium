@@ -198,6 +198,41 @@ guess_the_number:
     - '<center>The correct answer was &e%correct_answer%&f!'
     - ''
 
+shoppinglist:
+
+  gameStartAnnouncement:
+    - ''
+    - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+    - ''
+    - '<center>&fYou have &e%timeToMemorize% seconds &fto &dmemorize &fSanta`s shopping list:'
+    - ''
+    - '<center>&f`&b%selection%&f`'
+    - ''
+  messageAfterMemorized:
+    - ''
+    - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+    - ''
+    - '<center>&fYou have &e%timeToGuess% seconds &fto write &dSanta`s shopping list &fin order! '
+    - ''
+    - '<center>&fUse commas to separate each item! (e.g. `&bapple, banana, chocolate&f`)'
+    - ''
+  correct_message:
+    - ''
+    - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+    - ''
+    - '<center>&a%winner_1% &7was the first to write the list in order and got a prize! (&c%time_1%s&7)'
+    - ''
+    - '<center>&fThe answer was: &f`&b%correct_answer%&f`'
+    - ''
+  time_expired_message:
+    - ''
+    - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+    - ''
+    - '<center>&f%timeToGuess%s &chave passed! &fThe shopping list game is now over!'
+    - ''
+    - '<center>&fThe correct answer was: &f`&b%correct_answer%&f`'
+    - ''
+
 clickable:
   clickableText: '&aClick Here!'
   hoverText: '&eClick Here!'
