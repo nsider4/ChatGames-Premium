@@ -513,6 +513,29 @@ hoverable:
     - 'Ingot'
     - 'Tadpole'
 
+shoppinglist:
+  items:
+    - Candy Cane
+    - Ribbon
+    - Snow Globe
+    - Gingerbread Man
+    - Sleigh
+    - Jingle Bells
+    - Christmas Tree
+    - Stocking
+    - Mistletoe
+    - Tinsel
+    - Ornaments
+    - Poinsettia
+    - Hot Cocoa
+    - Santa Hat
+    - Reindeer
+    - Wreath
+    - Christmas Lights
+    - Nutcracker
+    - Christmas Cookies
+    - Snowman
+
 blacklistedWords:
   - 'ass'
   - 'dumb'
